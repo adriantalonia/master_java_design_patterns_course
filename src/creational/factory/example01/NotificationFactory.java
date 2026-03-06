@@ -11,7 +11,7 @@ public class NotificationFactory {
             case "sms" -> new SmsNotification(message);
             case "whatsapp" -> new WhatsAppNotification(message);
             case "email" -> new EmailNotification(message);
-            default -> throw new IllegalArgumentException("Invalid notification type");
+            default -> throw new IllegalArgumentException("Unknow notification type: " + type);
         };
 
     }

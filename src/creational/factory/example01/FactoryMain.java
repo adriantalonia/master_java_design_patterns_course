@@ -11,5 +11,9 @@ public class FactoryMain {
         Notification whatsappNotification = NotificationFactory.createNotification("whatsapp", "Hello from whatsapp");
         whatsappNotification.notifyUser();
 
+        // throw an exception
+        //Notification pushNotification = NotificationFactory.createNotification("push", "Hello from push");
+        //pushNotification.notifyUser();
+
     }
 }
